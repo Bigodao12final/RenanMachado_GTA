@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CRUD GTA</title>
+</head>
+
+<body>
+
+   <h1>Cadastro de GTA</h1>
+
+   <label for="inputNome">Nome</label>
+   <input type="text" name="inputNome" id="inputNome">
+   <input type="button" value="Procure" id="btProcure" onclick="procure()" style="display:inline;">
+   <input type="button" value="Inserir" id="btInserir" onclick="inserir()" style="display:none;">
+   <input type="button" value="Alterar" id="btAlterar" onclick="alterar()" style="display:none;">
+   <input type="button" value="Excluir" id="btExcluir" onclick="excluir()" style="display:none;">
+   <br><br>
+
+   
+   <label for="inputAnoQSP">Ano que se passa</label>
+   <input type="number" name="inputAnoQSP" id="inputAnoQSP"> 
+   <br> 
+   <label for="inputDataLancamento">Data de lançamento</label>
+   <input type="date" name="inputDataLancamento" id="inputDataLancamento">
+   <br>
+   <label for="inputProtagonista">Protagonista</label>
+   <input type="text" name="inputProtagonista" id="inputProtagonista">
+   <br>
+   <label for="inputAntagonista">Antagonista</label>
+   <input type="text" name="inputAntagonista" id="inputAntagonista">
+   <br>
+   <label for="inputCidade">Cidade</label>
+   <input type="text" name="inputCidade" id="inputCidade">
+
+   <br><br>
+   <div id="divAviso" style="background-color: antiquewhite;"></div>
+   <br>
+   <input type="button" value="Salvar" id="btSalvar" onclick="salvar()" style="display:none;">
+   <input type="button" value="Cancelar" id="btCancelar" onclick="cancelarOperacao()" style="display:none;">
+   <br><br>
+   <!-- <input type="button" value="Listar" onclick="listar()">
+    <br><br> -->
+
+   <div id="outputSaida" style="background-color: aqua;">...</div>
+
+   <input type="button" value="Salvar Dados" onclick="prepararESalvarCSV()">
+   <input type="button" value="Buscar Dados Salvos" onclick="abrirArquivoSalvoEmLocalPermanente()">
+
+   <script src="./gta.js"></script>
+   <script src="./gtacontrol.js"></script>
+</body>
+
+         </html>
